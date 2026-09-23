@@ -1,0 +1,28 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "break",
+    "wm",
+    "break",
+    "terminal",
+    "break",
+    "cpu",
+    "break",
+    "gpu",
+    "break",
+    "memory",
+    "break",
+    "swap",
+    "break",
+    "disk",
+    "break",
+    {
+      "type": "custom",
+      "key": "Shell",
+      "format": "Noctalia Shell",
+    },
+  ]
+}
