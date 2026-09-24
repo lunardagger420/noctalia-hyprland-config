@@ -5,8 +5,8 @@
 local programs = require("lua/programs")
 local mainMod = "SUPER"
 
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(programs.terminal))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(programs.terminal))
 local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. "+ Q", hl.dsp.exec_cmd(programs.browser))
