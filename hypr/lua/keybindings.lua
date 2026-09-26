@@ -6,18 +6,20 @@ local programs = require("lua/programs")
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(programs.terminal))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(programs.terminal))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(programs.terminal))
 local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. "+ Q", hl.dsp.exec_cmd(programs.browser))
+hl.bind(mainMod .. "+ C", hl.dsp.exec_cmd(programs.browser))
 hl.bind(mainMod .. "+ E", hl.dsp.exec_cmd(programs.fileManager))
 hl.bind(mainMod .. "+ T", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. "+ R", hl.dsp.exec_cmd(programs.menu))
 hl.bind(mainMod .. "+ P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. "+ J", hl.dsp.layout("togglesplit")) -- dwindle only
+-- hl.bind(mainMod .. "+ J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. "+ TAB", function()
     hl.plugin.scrolloverview.overview("toggle all")
 end)
+hl.bind(mainMod .. "+ F", hl.dsp.window.fullscreen({ mode = 0 }))
+hl.bind(mainMod .. "+ SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))
 
 --------------------
 --- MOVE WINDOWS ---
